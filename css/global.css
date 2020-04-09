@@ -2,9 +2,63 @@
 *::after,
 *::before {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	/*project sizes*/
+	--width-desktop: 1350px;
+	--width-tablet: 767px;
+	--width-phone: 374px;
+
+
+	/* colors*/
+	--primaryColor: #92272D;
+	--main-Font-Color: #343642;
+	--main-Menu-Font-Color: #59595C;
+	--main-Header-FirstColor: #59595C;
+	--main-Header-SecondColor: var(--primaryColor);
+	--main-Gradient: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, var(--main-Font-Color) 100%);
+
+	/*used fonts*/
+	--main-Font: 'Open Sans', sans-serif;
+	--header-Font: 'Merriweather', serif;
+
+	/*font sizes*/
+	--fontsize-base: 1rem;
+	--fontsize-1: calc(var(--fontsize-base) * 3);
+	/*48px*/
+	--fontsize-2: calc(var(--fontsize-base) * 1.5);
+	/*24px*/
+	--fontsize-3: calc(var(--fontsize-base) * 1.125);
+	/*18px*/
+	--fontsize-4: calc(var(--fontsize-base) * 1);
+	/*16px*/
+	--fontsize-5: calc(var(--fontsize-base) * .875);
+	/*14px*/
+	--fontsize-6: calc(var(--fontsize-base) * .75);
+	/*12px*/
+	--fontsize-7: calc(var(--fontsize-base) * .625);
+	/*10px*/
+
+	/*line height*/
+	--line-height-base: 1.5;
+	--line-height-small: 1.2;
+	--line-height-large: 1.8;
+
+	/*margin padding*/
+	--space-base: 10px;
+	--space-gap: calc(var(--space-base) * 1.5);
+
+	/**/
+
+	/**/
 }
 
 body {
-	font-size: 16px;
-	font-family: 'Roboto Condensed', sans-serif;
+	color: var(--main-Font-Color);
+	font-family: var(--main-Font);
+	font-size: var(--fontsize-5);
+	line-height: var(--line-height-base);
 }

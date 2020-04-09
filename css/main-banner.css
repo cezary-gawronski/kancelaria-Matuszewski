@@ -1,0 +1,54 @@
+.main-banner {
+    background: url("/img/kancelariaMM_backgorund_first.jpg");
+    height: 100vh;
+    margin: 0 auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main-banner__silhouette-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: var(--width-desktop);
+    height: 100vh;
+    /*-usunąć*/
+
+
+}
+
+.main-banner__silhouette-image {
+    position: absolute;
+    top: -50px;
+    left: -250px;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 10, .4));
+}
+
+.main-banner__hero-header {
+    position: absolute;
+    top: 300px;
+    right: 0;
+    color: black;
+}
+
+
+.main-banner__description-background {
+    height: 160px;
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primaryColor);
+
+}
+
+.main-banner__description-paragraphs {
+    max-width: var(--width-desktop);
+    position: absolute;
+    color: white;
+    font-size: var(--fontsize-2);
+    text-align: justify;
+    top: 60px;
+    padding: 40px 10px;
+}
