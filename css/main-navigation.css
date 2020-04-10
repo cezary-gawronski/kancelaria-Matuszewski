@@ -121,7 +121,7 @@
     height: var(--size-top-left-logo);
 }
 
-.profession {
+.main-navigation__profession {
     font-family: var(--header-Font);
     font-size: var(--fontsize-4);
     color: var(--main-Font-Color);
@@ -130,7 +130,7 @@
 
 }
 
-.profession--red {
+.main-navigation__profession--red {
     color: var(--main-Header-SecondColor);
     font-size: var(--fontsize-3);
 }
