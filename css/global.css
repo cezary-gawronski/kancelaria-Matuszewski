@@ -9,9 +9,14 @@
 :root {
 	/*project sizes*/
 	--width-desktop: 1350px;
+	--width-mobile: 991px;
 	--width-tablet: 767px;
 	--width-phone: 374px;
 
+	/*interface*/
+	--padding-navbar: 15px;
+	--size-top-left-logo: 50px;
+	--height-navbar: calc(var(--size-top-left-logo) + calc(var(--padding-navbar) * 2));
 
 	/* colors*/
 	--primaryColor: #92272D;

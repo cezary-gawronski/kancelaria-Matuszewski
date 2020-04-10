@@ -2,6 +2,13 @@
     width: 16px;
 }
 
-.main-navigation__menu-item:nth-last-of-type(3) {
+.main-navigation__menu-item-mobile-flex-icon {
     margin-left: 80px;
+}
+
+
+@media (max-width: 991px) {
+    .main-navigation__menu-item-mobile-flex-icon {
+        margin-left: 0;
+    }
 }
