@@ -64,11 +64,16 @@
 
 }
 
+:root {
+    /* Absolute position for hero header */
+    --top-position: 50px;
+    --left-position: 490px;
+}
 
 .main-banner__hero-header {
     position: absolute;
-    left: 490px;
-    top: 50px;
+    top: var(--top-position);
+    left: var(--left-position);
     transition: .2s;
 }
 
@@ -78,6 +83,10 @@
     line-height: var(--line-height-small);
     font-weight: bold;
     transition: .2s;
+}
+
+.main-banner__hero-header-paragraphs--red {
+    color: var(--main-Header-SecondColor);
 }
 
 @media (max-width: 991px) {
@@ -91,8 +100,50 @@
     }
 }
 
+.main-banner__list-offer-container {
+    position: absolute;
+    max-width: 1900px;
+    /* max-width: var(--width-desktop); */
+    top: calc(var(--top-position) + 190px);
+    left: var(--left-position);
+}
 
+.main-banner__list-offer {}
 
-.main-banner__hero-header--red {
-    color: var(--main-Header-SecondColor);
+.main-banner__list-offer-items {
+    list-style: none;
+    font-family: var(--header-Font);
+    font-weight: bold;
+    font-size: var(--fontsize-2);
+    /* padding: 5px 0; */
+}
+
+.main-banner__list-offer-link {
+    color: var(--main-Header-FirstColor);
+    background: var(--main-Gradient);
+    text-decoration: none;
+
+}
+
+.main-banner__phone-bar-container {
+    position: absolute;
+    top: calc(var(--top-position) + 190px + 300px);
+    left: calc(var(--left-position) + 150px);
+}
+
+.main-banner__phone-bar-container-background {
+    /* position: absolute; */
+    height: 60px;
+    background-color: var(--main-Header-SecondColor);
+    top: calc(var(--top-position) + 190px + 300px);
+    left: calc(var(--left-position) + 150px);
+
+}
+
+.main-banner__phone-bar-phone-number {
+    font-family: var(--header-Font);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: var(--fontsize-1);
 }
