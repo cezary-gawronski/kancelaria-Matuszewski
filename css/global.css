@@ -24,7 +24,7 @@
 	--main-Menu-Font-Color: #59595C;
 	--main-Header-FirstColor: #59595C;
 	--main-Header-SecondColor: var(--primaryColor);
-	--main-Gradient: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, var(--main-Font-Color) 100%);
+	--main-Gradient: linear-gradient(90deg, rgba(89, 89, 92, 0.3) 0%, rgba(89, 89, 92, 0) 100%);
 
 	/*used fonts*/
 	--main-Font: 'Open Sans', sans-serif;

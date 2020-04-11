@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kancelaria Radcy Prawnego — Mateusz Matuszewski</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap&subset=latin-ext"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap&subset=latin-ext"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet" />
 
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/main-navigation.css" />
@@ -31,164 +24,127 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/route.css" />
     <link rel="stylesheet" href="css/footer.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <nav class="main-navigation">
-      <div class="main-navigation__inner">
-        <div class="main-navigation__logo">
-          <a href="#" class="main-navigation__logo-link">
-            <img
-              src="img/logos/logo_kirp_signet.svg"
-              alt="logo Krajowej Izby Radców Prawnych"
-              class="main-navigation__logo-image"
-            />
-          </a>
+        <div class="main-navigation__inner">
+            <div class="main-navigation__logo">
+                <a href="#" class="main-navigation__logo-link">
+                    <img src="img/logos/logo_kirp_signet.svg" alt="logo Krajowej Izby Radców Prawnych"
+                        class="main-navigation__logo-image" />
+                </a>
 
-          <a href="#" class="main-navigation__logo-link">
-            <span class="main-navigation__profession">Radca Prawny</span>
-            <span
-              class="main-navigation__profession main-navigation__profession--red"
-              >Mateusz Matuszewski</span
-            >
-          </a>
+                <a href="#" class="main-navigation__logo-link">
+                    <span class="main-navigation__profession">Radca Prawny</span>
+                    <span class="main-navigation__profession main-navigation__profession--red">Mateusz
+                        Matuszewski</span>
+                </a>
+            </div>
+            <ul class="main-navigation__menu js-main-navigation__menu">
+                <li class="main-navigation__menu-item">
+                    <a href="#about-me" class="main-navigation__link">
+                        O mnie
+                    </a>
+                </li>
+                <li class="main-navigation__menu-item">
+                    <a href="#publications" class="main-navigation__link">
+                        Publikacje
+                    </a>
+                </li>
+                <li class="main-navigation__menu-item">
+                    <a href="#offer" class="main-navigation__link">
+                        Oferta
+                    </a>
+                </li>
+                <li class="main-navigation__menu-item">
+                    <a href="#contact" class="main-navigation__link">
+                        Kontakt
+                    </a>
+                </li>
+
+                <div class="main-navigation__menu-item-mobile-flex-icon">
+                    <li class="main-navigation__menu-item">
+                        <a href="mailto:kancel.prawna@gmail.com" class="main-navigation__link">
+                            <img src="img/icons/envelope.svg" alt="e-mail" class="social-icon" />
+                        </a>
+                    </li>
+                    <li class="main-navigation__menu-item">
+                        <a href="tel:+48693348617" class="main-navigation__link">
+                            <img src="img/icons/phone.svg" alt="telefon" class="social-icon" />
+                        </a>
+                    </li>
+                    <li class="main-navigation__menu-item">
+                        <a href="https://facebook.com" class="main-navigation__link">
+                            <img src="img/icons/social/facebook.svg" alt="Facebook" class="social-icon" />
+                        </a>
+                    </li>
+                </div>
+            </ul>
+
+            <button class="main-navigation__mobile-button js-main-navigation__mobile-button">
+                <img src="img/icons/navigation.svg" alt="Otwórz / zamknij nawigację"
+                    class="main-navigation__mobile-button-image" />
+            </button>
         </div>
-        <ul class="main-navigation__menu js-main-navigation__menu">
-          <li class="main-navigation__menu-item">
-            <a href="#about-me" class="main-navigation__link">
-              O mnie
-            </a>
-          </li>
-          <li class="main-navigation__menu-item">
-            <a href="#publications" class="main-navigation__link">
-              Publikacje
-            </a>
-          </li>
-          <li class="main-navigation__menu-item">
-            <a href="#offer" class="main-navigation__link">
-              Oferta
-            </a>
-          </li>
-          <li class="main-navigation__menu-item">
-            <a href="#contact" class="main-navigation__link">
-              Kontakt
-            </a>
-          </li>
-
-          <div class="main-navigation__menu-item-mobile-flex-icon">
-            <li class="main-navigation__menu-item">
-              <a
-                href="mailto:kancel.prawna@gmail.com"
-                class="main-navigation__link"
-              >
-                <img
-                  src="img/icons/envelope.svg"
-                  alt="e-mail"
-                  class="social-icon"
-                />
-              </a>
-            </li>
-            <li class="main-navigation__menu-item">
-              <a href="tel:+48693348617" class="main-navigation__link">
-                <img
-                  src="img/icons/phone.svg"
-                  alt="telefon"
-                  class="social-icon"
-                />
-              </a>
-            </li>
-            <li class="main-navigation__menu-item">
-              <a href="https://facebook.com" class="main-navigation__link">
-                <img
-                  src="img/icons/social/facebook.svg"
-                  alt="Facebook"
-                  class="social-icon"
-                />
-              </a>
-            </li>
-          </div>
-        </ul>
-
-        <button
-          class="main-navigation__mobile-button js-main-navigation__mobile-button"
-        >
-          <img
-            src="img/icons/navigation.svg"
-            alt="Otwórz / zamknij nawigację"
-            class="main-navigation__mobile-button-image"
-          />
-        </button>
-      </div>
     </nav>
 
     <script src="js/main-navigation.js"></script>
 
     <section>
-      <div class="top-description__background">
-        <p class="top-description__paragraphs">
-          Posiadam kompetencje i uprawnienia do reprezentowania jako
-          profesjonalny pełnomocnik stron (osób fizycznych, prawnych, jednostek
-          organizacyjnych) w postępowaniach przed sądami powszechnymi,
-          administracyjnymi, organami administracji (nr uprawnień: Ol-1548 OIRP
-          Olsztyn).
-        </p>
-      </div>
+        <div class="top-description__background">
+            <p class="top-description__paragraphs">
+                Posiadam kompetencje i uprawnienia do reprezentowania jako
+                profesjonalny pełnomocnik stron (osób&nbsp;fizycznych, prawnych, jednostek
+                organizacyjnych) w postępowaniach przed sądami powszechnymi,
+                administracyjnymi, organami administracji (nr uprawnień: Ol-1548 OIRP
+                Olsztyn).
+            </p>
+        </div>
     </section>
 
     <section class="main-banner">
-      <div class="main-banner__silhouette-container">
-        <img
-          class="main-banner__silhouette-image"
-          src="img/matuszewski-mateusz-first.png"
-          alt="Zdjęcie Mateusz Matuszewski"
-        />
-        <div class="main-banner__hero-header">
-          <span class="main-banner__hero-header-paragraphs">Profesjonalne</span>
-          <br />
-          <span
-            class="main-banner__hero-header-paragraphs main-banner__hero-header-paragraphs--red"
-            >usługi prawne</span
-          >
-        </div>
-        <div class="main-banner__list-offer-container">
-          <ul class="main-banner__list-offer">
-            <li class="main-banner__list-offer-items">
-              <a href="#" class="main-banner__list-offer-link">porady ustne</a>
-            </li>
-            <li class="main-banner__list-offer-items">
-              <a href="#" class="main-banner__list-offer-link"
-                >opinie na piśmie</a
-              >
-            </li>
-            <li class="main-banner__list-offer-items">
-              <a href="#" class="main-banner__list-offer-link"
-                >sporządzanie pism w sprawach (pozwy, apelacje, odwołania w
-                sprawach administracyjnych, wszelkie wnioski)</a
-              >
-            </li>
-            <li class="main-banner__list-offer-items">
-              <a href="#" class="main-banner__list-offer-link"
-                >reprezentacja przed sądami powszechnymi i administracyjnymi</a
-              >
-            </li>
-            <li class="main-banner__list-offer-items">
-              <a href="#" class="main-banner__list-offer-link"
-                >reprezentacja w postępowaniach administracyjnych.</a
-              >
-            </li>
-          </ul>
-        </div>
+        <div class="main-banner__silhouette-container">
+            <img class="main-banner__silhouette-image" src="img/matuszewski-mateusz-first.png"
+                alt="Zdjęcie Mateusz Matuszewski" />
+            <div class="main-banner__hero-header">
+                <span class="main-banner__hero-header-paragraphs">Profesjonalne</span>
+                <br />
+                <span class="main-banner__hero-header-paragraphs main-banner__hero-header-paragraphs--red">usługi
+                    prawne</span>
+            </div>
+            <div class="main-banner__list-offer-container">
+                <ul class="main-banner__list-offer">
+                    <li class="main-banner__list-offer-items">
+                        <a href="#" class="main-banner__list-offer-link">porady ustne</a>
+                    </li>
+                    <li class="main-banner__list-offer-items">
+                        <a href="#" class="main-banner__list-offer-link">opinie na piśmie</a>
+                    </li>
+                    <li class="main-banner__list-offer-items">
+                        <a href="#" class="main-banner__list-offer-link">sporządzanie pism w&nbsp;sprawach (pozwy,
+                            apelacje,
+                            odwołania w&nbsp;sprawach administracyjnych, wszelkie wnioski)</a>
+                    </li>
+                    <li class="main-banner__list-offer-items">
+                        <a href="#" class="main-banner__list-offer-link">reprezentacja przed sądami powszechnymi
+                            i&nbsp;administracyjnymi</a>
+                    </li>
+                    <li class="main-banner__list-offer-items">
+                        <a href="#" class="main-banner__list-offer-link">reprezentacja w postępowaniach
+                            administracyjnych</a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="main-banner__phone-bar-container">
-          <a
-            class="main-banner__phone-bar-phone-number"
-            href="tel:+48693348617"
-          >
-            tel. +48 505 272 976
-          </a>
-          <div class="main-banner__phone-bar-container-background"></div>
+            <div class="main-banner__phone-bar-container">
+                <a class="main-banner__phone-bar-phone-number" href="tel:+48693348617">
+                    tel. +48 693 348 617
+                </a>
+                <!-- <div class="main-banner__phone-bar-container-background"></div> -->
+            </div>
         </div>
-      </div>
     </section>
-  </body>
+</body>
+
 </html>
