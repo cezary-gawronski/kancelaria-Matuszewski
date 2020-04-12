@@ -1,0 +1,52 @@
+.bookmark {
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4vh 1vw;
+    position: relative;
+    z-index: 0;
+}
+
+.bookmark--offer {
+    background-image: url("/materiały/foty/clarisse-meyer-jKU2NneZAbI-unsplash.jpg");
+}
+
+.bookmark--about-me {
+    background-image: url("/materiały/foty/clarisse-meyer-jKU2NneZAbI-unsplash.jpg");
+}
+
+
+.bookmark--contact {
+    background-image: url("/materiały/foty/clarisse-meyer-jKU2NneZAbI-unsplash.jpg");
+}
+
+.bookmark__header {
+    font-family: var(--serif-font);
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+@media (max-width: 1199px) {
+    .bookmark__header {
+        font-size: 8vw;
+    }
+}
+
+.bookmark::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+
+.bookmark__header::before,
+.bookmark__header::after {
+    content: " - ";
+    font-weight: normal;
+}

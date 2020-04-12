@@ -6,6 +6,8 @@
 	padding: 0;
 }
 
+
+
 :root {
 	/*project sizes*/
 	--width-desktop: 1350px;
@@ -19,16 +21,17 @@
 	--height-navbar: calc(var(--size-top-left-logo) + calc(var(--padding-navbar) * 2));
 
 	/* colors*/
-	--primaryColor: #92272D;
-	--main-Font-Color: #343642;
-	--main-Menu-Font-Color: #59595C;
-	--main-Header-FirstColor: #59595C;
-	--main-Header-SecondColor: var(--primaryColor);
-	--main-Gradient: linear-gradient(90deg, rgba(89, 89, 92, 0.3) 0%, rgba(89, 89, 92, 0) 100%);
+	--primary-color: #92272D;
+	--main-font-color: #343642;
+	--main-menu-font-color: #59595C;
+	--main-header-first-color: var(--main-font-color);
+	--main-header-second-color: var(--primary-color);
+	--main-gradient: linear-gradient(90deg, rgba(89, 89, 92, 0.3) 0%, rgba(89, 89, 92, 0) 100%);
 
 	/*used fonts*/
-	--main-Font: 'Open Sans', sans-serif;
-	--header-Font: 'Merriweather', serif;
+	--main-font: 'Open Sans', sans-serif;
+	/* --serif-font: 'Lora', serif; */
+	--serif-font: 'Merriweather', serif;
 
 	/*font sizes*/
 	--fontsize-base: 1rem;
@@ -62,8 +65,8 @@
 }
 
 body {
-	color: var(--main-Font-Color);
-	font-family: var(--main-Font);
+	color: var(--main-font-color);
+	font-family: var(--main-font);
 	font-size: var(--fontsize-5);
 	line-height: var(--line-height-base);
 }
