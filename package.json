@@ -1,0 +1,25 @@
+{
+  "name": "kancelariamm",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000k\u0000a\u0000n\u0000c\u0000e\u0000l\u0000a\u0000r\u0000i\u0000a\u0000-\u0000M\u0000a\u0000t\u0000u\u0000s\u0000z\u0000e\u0000w\u0000s\u0000k\u0000i\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cezary-gawronski/kancelaria-Matuszewski.git"
+  },
+  "author": "Cezary Gawroński",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cezary-gawronski/kancelaria-Matuszewski/issues"
+  },
+  "homepage": "https://github.com/cezary-gawronski/kancelaria-Matuszewski#readme"
+}
