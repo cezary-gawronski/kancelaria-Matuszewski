@@ -1,39 +1,10 @@
 .main-banner {
-    background: url("/img/kancelariaMM_backgorund_first.jpg");
-    height: 100vh;
+    background: url("../img/kancelariaMM_backgorund_first.jpg");
     margin: 0 auto;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
-}
-
-.main-banner__silhouette-container {
-    position: relative;
-    margin: 0 auto;
-    max-width: var(--width-desktop);
-    height: 100vh;
-    /*-usunąć*/
-
-    /* overflow: hidden; */
-    /*ukrywanie sylwetki*/
-
-}
-
-.main-banner__silhouette-image {
-    /* position: absolute; */
-    margin-top: 40px;
-    width: 800px;
-    margin-left: -180px;
-    filter: drop-shadow(0px -5px 15px rgba(0, 0, 10, .4));
-    transition: .2s;
-    z-index: 1;
-}
-
-@media (max-width:991px) {
-    .main-banner__silhouette-image {
-        width: 650px;
-    }
 }
 
 .top-description-competences__background {
@@ -65,6 +36,42 @@
 
 }
 
+.main-banner__silhouette-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: var(--width-desktop);
+    /* background-color: aqua; */
+    /*-usunąć*/
+
+    /* overflow: hidden; */
+    /*ukrywanie sylwetki*/
+
+}
+
+.main-banner__silhouette-image {
+    width: 700px;
+    margin-top: 40px;
+    margin-left: -180px;
+    margin-bottom: -5px;
+
+    object-fit: fill;
+
+    filter: drop-shadow(0px -5px 15px rgba(0, 0, 10, .4));
+    transition: .2s;
+    z-index: 1;
+
+    opacity: .92;
+}
+
+@media (max-width:991px) {
+    .main-banner__silhouette-image {
+        margin-left: -140px;
+        width: 500px;
+    }
+}
+
+
+
 :root {
     /* Absolute position for hero header */
     --top-position-hero-header: 50px;
@@ -73,12 +80,34 @@
 
 .main-banner__hero-header {
     position: absolute;
-    top: var(--top-position-hero-header);
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    top: calc(var(--top-position-hero-header) - 0px);
     left: var(--left-position-hero-header);
     transition: .2s;
+    z-index: 50;
+}
+
+@media (max-width: 991px) {
+    :root {
+        --left-position: calc(var(--left-position-hero-header) - 250px);
+    }
+
+    .main-banner__hero-header {
+        left: var(--left-position);
+
+        /* top: calc(var(--top-position-hero-header) - 40px); */
+        /* transform: scale(0.8); */
+        /* left: 300px; */
+    }
 }
 
 .main-banner__hero-header-paragraphs {
+    text-align: left;
     color: var(--main-header-first-color);
     font-family: var(--serif-font);
     font-size: 65px;
@@ -93,11 +122,12 @@
 
 @media (max-width: 991px) {
     .main-banner__hero-header-paragraphs {
+        /* font-size: var(-fontsize-5); */
         font-size: 45px;
     }
 
     .main-banner__hero-header {
-        left: 390px;
+        /* left: 390px; */
 
     }
 }
@@ -106,15 +136,23 @@
     position: absolute;
     top: calc(var(--top-position-hero-header) + 185px);
     left: calc(var(--left-position-hero-header) + 30px);
-    z-index: 1;
+    z-index: 0;
 
 }
 
 @media (max-width: 991px) {
+
+
+
     .main-banner__list-offer-container {
-        scale: .8;
-        top: calc(var(--top-position-hero-header) + 90px);
-        left: calc(var(--left-position-hero-header) - 140px);
+        transform: scale(.7);
+        top: calc(var(--top-position-hero-header) + 65px);
+        left: var(--left-position);
+        column-count: 2;
+        column-gap: 25px;
+
+
+
     }
 }
 
@@ -143,11 +181,16 @@
     transition: .3s;
 }
 
+:root {
+    --scale-hover: 1.1;
+
+}
 
 .main-banner__list-offer-items:hover {
     background: var(--main-gradient);
     margin-left: 15px;
-    scale: 1.2;
+    transform: scale(var(--scale-hover));
+    /* scale: 1.2; */
     cursor: pointer;
     transform-origin: left;
     color: transparent;
@@ -170,22 +213,23 @@
 }
 
 
-:root {
-    /* Absolute position for hero header */
-    --left-position-hero-header-phone-bar: -350px;
-}
 
 .main-banner__phone-bar-container {
-    position: absolute;
-    /*     width 100% not suported :(     */
-    width: 99%;
-    background-color: var(--main-header-second-color);
-    top: calc(var(--top-position-hero-header) + 190px + 300px);
-    left: calc(var(--left-position-hero-header) + 150px);
-    margin-left: var(--left-position-hero-header-phone-bar);
-    transition: .3s;
+    /* position: relative; */
+    column-span: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    margin-top: 20px;
+    margin-left: -50px;
+    /* top: calc(var(--top-position-hero-header) + 190px + 300px); */
+
+    background-color: var(--main-header-second-color);
+    transition: .3s;
 }
+
+
 
 .main-banner__phone-bar-container:hover .main-banner__phone-bar-phone-number {
     transform: scale(1.2) translateX(50px);
@@ -193,8 +237,6 @@
 }
 
 .main-banner__phone-bar-phone-number {
-    display: inline-block;
-    margin-left: calc(var(--left-position-hero-header-phone-bar) * -1);
     font-family: var(--serif-font);
     color: white;
     font-weight: bold;

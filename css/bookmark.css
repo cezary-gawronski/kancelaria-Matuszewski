@@ -1,39 +1,47 @@
 .bookmark {
-    background-position: center center;
+    background: url("../img/bookmarks/bookmarks-background_2.jpg");
     background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 4vh 1vw;
     position: relative;
     z-index: 0;
 }
 
+:root {
+
+    /* --url-bg-bookmarks: url("img/bookmarks/bookmarks-background.jpg") center center/cover no-repeat; */
+
+}
+
 .bookmark--offer {
-    background-image: url("/materiały/foty/clarisse-meyer-jKU2NneZAbI-unsplash.jpg");
+    /* background: var(--url-bg-bookmarks);
+    background-blend-mode: lighten; */
+    /* filter: brightness(10); */
 }
 
 .bookmark--about-me {
-    background-image: url("/materiały/foty/clarisse-meyer-jKU2NneZAbI-unsplash.jpg");
+    /* background: var(--url-bg-bookmarks); */
 }
 
-
 .bookmark--contact {
-    background-image: url("/materiały/foty/clarisse-meyer-jKU2NneZAbI-unsplash.jpg");
+    /* background: var(--url-bg-bookmarks); */
 }
 
 .bookmark__header {
+    color: white;
     font-family: var(--serif-font);
     font-size: 60px;
+    text-align: center;
+    padding: 4vh 1vw;
     text-transform: uppercase;
     margin: 0;
 }
 
 @media (max-width: 1199px) {
     .bookmark__header {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 }
 
+/*kolor na zakładkach*/
 .bookmark::after {
     content: "";
     position: absolute;
@@ -41,7 +49,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .25);
     z-index: -1;
 }
 
